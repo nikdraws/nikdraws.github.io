@@ -240,6 +240,10 @@ nav .fa-solid {
     flex-direction: column;
   }
 
+  div:nth-child(4) {
+    flex-direction: column-reverse;
+  }
+
   .section img {
     height: 10rem;
   }
