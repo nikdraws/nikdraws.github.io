@@ -34,7 +34,7 @@ body {
 
 p,
 h1 {
-  animation: fadeInAnimation ease 4s;
+  animation: fadeInAnimation ease 2s;
   animation-fill-mode: forwards;
 }
 
@@ -217,7 +217,7 @@ nav .fa-solid {
   text-align: center;
   font-size: 60px;
   color: #777;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .course p {
@@ -238,7 +238,7 @@ nav .fa-solid {
   width: 80%;
   margin: auto;
   flex-direction: row-reverse;
-  margin-top: 60px;
+  margin-top: 100px;
   border-radius: 40px;
 }
 
