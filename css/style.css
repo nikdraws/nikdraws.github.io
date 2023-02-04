@@ -6,6 +6,28 @@
   overflow-x: hidden;
 }
 
+/* Scrollbat */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2e2e2e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666666;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
 body {
   background-color: rgb(4, 9, 30);
 }
