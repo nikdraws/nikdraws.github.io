@@ -187,9 +187,13 @@ nav .fa-solid {
 
 /*--- Card --*/
 
+.course {
+  height: 100em;
+}
+
 .course h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 60px;
   color: #777;
   margin-top: 30px;
 }
@@ -200,40 +204,49 @@ nav .fa-solid {
   color: #fff;
 }
 
-.card-container {
+.section h1 {
+  font-size: 40px;
+}
+
+.section {
+  background-color: rgb(3, 6, 20);
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
   width: 80%;
   margin: auto;
-  text-align: left;
-  align-items: center;
-  background-color: rgb(3, 6, 20);
-  color: #fff;
-  margin-top: 100px;
-  border-radius: 20px;
-  padding: 20px;
+  flex-direction: row-reverse;
+  margin-top: 60px;
+  border-radius: 40px;
 }
 
-.card-container img {
-  width: 100%;
-  border-radius: 10px;
-  margin-right: 10px;
-  margin-left: 10px;
+.section img {
   object-fit: cover;
+  padding: 20px;
+  border-radius: 40px;
 }
 
-@media (max-width: 700px) {
+.section h1 {
+  margin: 0;
+  color: #777;
+}
+
+@media (max-width: 800px) {
   .course p {
     font-size: 15px;
   }
 
-  .card-container {
+  .section {
+    flex-direction: column;
+  }
+
+  .section img {
+    height: 10rem;
+  }
+
+  .section {
     font-size: 12px;
     margin-top: 50px;
     font-size: 10px;
-  }
-  .card-container img {
-    width: 0;
-    padding: 0;
-    margin: 0;
   }
 }
