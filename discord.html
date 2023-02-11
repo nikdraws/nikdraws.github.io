@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RaveCraft Discord</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+      body {
+        background-color: #1f1e1e;
+        color: #fff;
+        text-align: center;
+        margin: auto;
+        font-size: 2rem;
+        font-family: "Bakbak One", cursive;
+      }
+
+      img {
+        height: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Redirecting to Discord in <span id="countdown">5</span> Seconds...</p>
+    <img src="../imgs/discord.png" />
+
+    <script>
+      // Total seconds to wait
+      var seconds = 5;
+
+      function countdown() {
+        seconds = seconds - 1;
+        if (seconds < 0) {
+          // Chnage your redirection link here
+          window.location = "https://dsc.gg/ravecraft";
+        } else {
+          // Update remaining seconds
+          document.getElementById("countdown").innerHTML = seconds;
+          // Count down using javascript
+          window.setTimeout("countdown()", 1000);
+        }
+      }
+
+      // Run countdown function
+      countdown();
+    </script>
+  </body>
+</html>
