@@ -90,10 +90,10 @@
     </section>
 
     <section class="discord">
-      <div class="text">
+      <div data-aos="fade" class="text">
         <h1>Join Our Discord:</h1>
       </div>
-      <iframe src="https://discord.com/widget?id=1004096813906792458&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe data-aos="fade" src="https://discord.com/widget?id=1004096813906792458&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
     </section>
 
     <!--JavaScript to toggle the Menu-->
@@ -113,7 +113,12 @@
     <!--Scroll Animation-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+  disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+});
     </script>
   </body>
 </html>
