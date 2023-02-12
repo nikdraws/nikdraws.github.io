@@ -310,4 +310,9 @@ nav .fa-solid {
   .discord h1 {
     font-size: 2em;
   }
+
+  .discord iframe {
+    width: 60vw;
+    height: 50vh;
+  }
 }
