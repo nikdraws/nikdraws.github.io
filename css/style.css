@@ -303,6 +303,7 @@ nav .fa-solid {
 .discord h1 {
   font-size: 3.5em;
   padding-bottom: 20px;
+  color: #ade8f4;
 }
 
 @media (max-width: 700px) {
