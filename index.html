@@ -20,7 +20,7 @@
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="/about">ABOUT</a></li>
+            <li><a href="#about">ABOUT</a></li>
             <li><a href="/team">TEAM</a></li>
             <li>
               <a href="/discord" target="_blank">DISCORD</a>
@@ -42,7 +42,7 @@
 
     <!--course-->
 
-    <section class="course">
+    <section class="course" id="about">
       <h1>What We Offer</h1>
       <p>We offer a variety of activities on RaveCraft, go check them out!</p>
       <div data-aos="flip-up" class="section">
@@ -115,10 +115,10 @@
     <script>
       AOS.init({
   disable: function() {
-    var maxWidth = 800;
-    return window.innerWidth < maxWidth;
-  }
-});
+      var maxWidth = 800;
+      return window.innerWidth < maxWidth;
+      }
+    });
     </script>
   </body>
 </html>

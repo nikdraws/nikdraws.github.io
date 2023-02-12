@@ -6,6 +6,10 @@
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Scrollbat */
 
 /* width */
@@ -166,6 +170,7 @@ nav img {
   color: #fff;
   border: 1px solid #8e478c;
   padding: 13px 40px;
+  margin-bottom: 10px;
   font-size: 20px;
   background: transparent;
   position: relative;
@@ -315,4 +320,86 @@ nav .fa-solid {
     width: 70vw;
     height: 40vh;
   }
+}
+
+/*Team Cards*/
+
+.team-text {
+  color: #efefef;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.team-text h1 {
+  font-size: 4em;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+.team-cards h2 {
+  font-size: 1.8em;
+}
+
+.card {
+  background-color: rgb(62, 62, 62);
+  color: #cbc9c9;
+  width: 300px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.card-image {
+  height: 350px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+
+.car-1 {
+  background-image: url("../imgs/dati.png");
+  background-color: #881106;
+}
+
+.car-2 {
+  background-image: url("../imgs/nikdraws.png");
+  background-color: #881106;
+}
+
+.car-3 {
+  background-image: url("../imgs/trueelias.png");
+  background-color: #208b3a;
+}
+
+.car-4 {
+  background-image: url("../imgs/isejalfox.png");
+  background-color: #208b3a;
+}
+
+.card h2 {
+  padding: 10px;
+}
+
+.card p {
+  padding: 10px;
+}
+
+.card a {
+  background-color: #040f34;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 30px;
+}
+
+.card:hover {
+  background-color: rgb(62, 62, 62);
+  color: white;
+  transform: scale(1.03);
+  box-shadow: 5px 10px 10px violet;
+  transition: all 0.5s ease;
 }

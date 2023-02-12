@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RaveCraft Team</title>
-    <link rel="stylesheet" href="css/team.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <script
       src="https://kit.fontawesome.com/c5be8292ec.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <section class="header">
+    <section class="header" style="background-image: none">
       <nav>
         <a href="/"><img src="imgs/logo.png" /></a>
-        <div class="nav-links" id="navLinks">
+        <div class="nav-links" id="navLinks" style="min-height: 100%">
           <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="/">HOME</a></li>
-            <li><a href="/about">ABOUT</a></li>
+            <li><a href="/#about">ABOUT</a></li>
             <li><a href="/team">TEAM</a></li>
             <li>
               <a href="/discord" target="_blank">DISCORD</a>
@@ -29,7 +29,76 @@
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
+
+      <div class="team-text">
+        <h1>Meet Our Team</h1>
+        <p>
+          Our goal is to give you the best experience. Please don't hesitate to
+          contact us if you have questions!
+        </p>
+      </div>
+
+      <div class="team-cards">
+        <div class="card">
+          <div class="card-image car-1"></div>
+          <h2>Dati_</h2>
+          <p>
+            Hey, I'm Dati I am 19 years old, and one of the owners of RaveCraft.
+            I try to give you all a good gaming experience and bring music
+            closer to you
+          </p>
+          <a
+            href="https://discordapp.com/users/343839110387073024"
+            target="_blank"
+            >Discord</a
+          >
+        </div>
+        <div class="card">
+          <div class="card-image car-2"></div>
+          <h2>Nikdraws</h2>
+          <p>
+            Hey, my name is Niklas. I'm 18 years old and live in Germany. I'm
+            one of the owners of the RaveCraft network. I'm there for all the
+            technical stuff since I love to code in my freetime.
+          </p>
+          <a
+            href="https://discordapp.com/users/404574824795471872"
+            target="_blank"
+            >Discord</a
+          >
+        </div>
+        <div class="card">
+          <div class="card-image car-3"></div>
+          <h2>TrueElias</h2>
+          <p>
+            Hi, I'm Elias and I am 15 years old. I joined the team because I
+            find the concept of shows really cool, and I want to support them.
+            Hopefully, we will see each other on the server!
+          </p>
+          <a
+            href="https://discordapp.com/users/770701575005798430"
+            target="_blank"
+            >Discord</a
+          >
+        </div>
+        <div class="card">
+          <div class="card-image car-4"></div>
+          <h2>IsejalFox_YT</h2>
+          <p>
+            Hi, I'm Jay. I'm a gamer, self-taught media designer, and music
+            enthusiast. I'm a mod at RaveCraft due to my friendship with the
+            owner and my enjoyment of mod work.
+          </p>
+          <a
+            href="https://discordapp.com/users/629735503779987468"
+            target="_blank"
+            >Discord</a
+          >
+        </div>
+      </div>
     </section>
+
+    <!--JavaScript to toggle the Menu-->
 
     <script>
       var navLinks = document.getElementById("navLinks");
